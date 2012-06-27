@@ -19,6 +19,7 @@ class Teatime
     else
     	puts "Couldn't acquire Fade Res..."
 		end
+		CGReleaseDisplayFadeReservation(fadeToken[0])
 	end
 
 end
