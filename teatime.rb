@@ -6,7 +6,7 @@ framework "QuartzCore"
 class Teatime
 
 	def run(time, flashes)
-		sleep time
+		sleep time * 60
 
 
     fadeToken = Pointer.new('I')
