@@ -7,14 +7,14 @@ framework "QuartzCore"
 class Teatime
 
   def speakString
-    @pool = NSAutoreleasePool.alloc.init
     synth = NSSpeechSynthesizer.alloc.init
     synth.startSpeakingString("Your tea has finished steeping")
   end
 
   def run(time, flashes, useVoiceToo)
     sleep time * 60
-
+    @pool = NSAutoreleasePool.alloc.init
+    
     if useVoiceToo
       speakString
     end
