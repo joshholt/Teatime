@@ -1,7 +1,6 @@
 all:
-	@export PATH=~/bin:$PATH
-	@macrubyc teatime.rb -o ~/bin/teatime
+	@macrubyc teatime.rb -o /usr/local/bin/teatime
 
 clean:
 	@rm teatime.o
-	@rm ~/bin/teatime
+	@rm /usr/local/bin/teatime
